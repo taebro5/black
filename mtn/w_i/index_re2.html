@@ -1,0 +1,1954 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="apple-touch-fullscreen" content="YES">
+	<meta name="viewport" content="user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>MTN STOCK</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link type="text/css" href="js/jquery_cal/themes/base/ui.all.css" rel="stylesheet">
+	<link type="text/css" href="js/jquery_cal/ui/demos.css" rel="stylesheet">
+	<link rel="shortcut icon" href="mtn_favicon.ico">
+
+
+
+	<style type="text/css">
+		@import url(../../../earlyaccess/nanumgothic.css);
+
+		* {
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+		}
+
+		/* common */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: '돋움', dotum, sans-serif;
+		}
+
+		img {
+			border: 0px;
+		}
+
+		.mainLayout {
+			position: relative;
+			width: 100%;
+			border: 0px solid aqua;
+			z-index: 0;
+		}
+
+		/*enq 질문박스*/
+		/*질문문구 영역*/
+
+
+		.topi1 {
+			position: relative;
+			background: url(bg/bg5_01.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.topi1_in {
+			position: relative;
+			background: url(in/re5_in_01.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 122px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.timecnt {
+			position: absolute;
+			left: 50%;
+			margin-left: -277px;
+			top: 10%;
+			width: 352px;
+			border: 0px solid lime;
+		}
+
+		.appcnt {
+			position: absolute;
+			left: 50%;
+			margin-left: 350px;
+			top: 10%;
+			width: 40px;
+			border: 0px solid lime;
+		}
+
+		.imgg2 {
+			position: relative;
+			background: url(bg/bg5_02.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.imgg2_in {
+			position: relative;
+			background: url(in/re5_in_02.gif) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 613px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+
+
+		.imgg3 {
+			position: relative;
+			background: url(bg/bg5_03.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg3_in {
+			position: relative;
+			background: url(in/re5_in_03.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 988px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+
+		.imgg4 {
+			position: relative;
+			background: url(bg/bg5_04.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg4_in {
+			position: relative;
+			background: url(in/re5_in_04.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 3080px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.imgg5 {
+			position: relative;
+			background: url(bg/bg5_05.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg5_in {
+			position: relative;
+			background: url(in/re5_in_05.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 1460px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.imgg6 {
+			position: relative;
+			background: url(bg/bg5_06.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg6_in {
+			position: relative;
+			background: url(in/re5_in_06.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 940px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.imgg7 {
+			position: relative;
+			background: url(bg/bg5_07.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg7_in {
+			position: relative;
+			background: url(in/re5_in_07.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 3467px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.imgg8 {
+			position: relative;
+			background: url(bg/bg5_08.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg8_in {
+			position: relative;
+			background: url(in/re5_in_08.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 3000px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.vid {
+			position: relative;
+			top: 410px;
+			left: 352px;
+		}
+
+		.imgg9 {
+			position: relative;
+			background: url(bg/bg5_09.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg9_in {
+			position: relative;
+			background: url(in/re5_in_09.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 3120px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.imgg10 {
+			position: relative;
+			background: url(bg/bg5_10.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg10_in {
+			position: relative;
+			background: url(in/re5_in_10.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 1184px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		/*.imgg10_in iframe{position:relative; top:500px; left:60px; width: 565px; height:351px;}*/
+
+		.imgg11 {
+			position: relative;
+			background: url(bg/bg5_11.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg11_in {
+			position: relative;
+			background: url(in/re5_in_11.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 1029px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+
+		.imgg12 {
+			position: relative;
+			background: url(bg/bg5_12.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg12_in {
+			position: relative;
+			background: url(in/re5_in_12.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 656px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+		.imgg13 {
+			position: relative;
+			background: url(bg/bg5_13.jpg) no-repeat;
+			width: 100%;
+			margin: 0 auto;
+			z-index: 1;
+		}
+
+		.imgg13_in {
+			position: relative;
+			background: url(in/re5_in_13.jpg) no-repeat;
+			width: 100%;
+			max-width: 1600px;
+			height: 255px;
+			margin: 0 auto;
+			background-position: center;
+		}
+
+
+
+
+		/*
+.modal {position:fixed;top:100px;left:100px;margin:0 auto;z-index:950;text-align:center;width:100%;display:none;}
+.modal_name {position:absolute;top:127px;z-index:2;width:100%;font-size:19px;font-weight:bold;margin:0 auto;z-index:2;text-align:center;margin-left:-117px;color:blue;}
+.modal_text {position:absolute;top:173px;margin:0 auto;z-index:2;text-align:center;width:100%;margin-left:-35px;}
+.modal_button {position:absolute;top:220px;margin:0 auto;z-index:2;text-align:center;width:100%;margin-left:-5px;cursor:pointer;}
+*/
+
+
+
+		.app_ins {
+			display: none;
+			position: fixed;
+			width: 740px;
+			height: 490px;
+			background: url(images/db_in.jpg);
+			z-index: 1001;
+			margin: 0 auto;
+			top: 300px;
+		}
+
+		.tel_td {
+			position: absolute;
+			width: 740px;
+			height: 60px;
+			top: 190px;
+			left: 35px;
+		}
+
+		.tel_td input[type="text"] {
+			width: 178px;
+			height: 60px;
+			font-size: 50px;
+			border: 1px solid #999999;
+			text-align: center;
+		}
+
+		.tel_td input[type="number"] {
+			width: 178px;
+			height: 60px;
+			font-size: 50px;
+			border: 1px solid #999999;
+			text-align: center;
+		}
+
+		.tel_td input[type="tel"] {
+			width: 178px;
+			height: 60px;
+			font-size: 50px;
+			border: 1px solid #999999;
+			text-align: center;
+		}
+
+		.tel_td select {
+			width: 178px;
+			height: 60px;
+			font-size: 50px;
+			border: 1px solid #999999;
+			text-align: center;
+		}
+
+		.app_ins_btn1 {
+			position: absolute;
+			z-index: 1002;
+			top: 290px;
+			left: 33px;
+			width: 675px;
+			height: 100px;
+			border: 1px solid lime;
+			cursor: pointer;
+			FILTER: alpha(opacity=0);
+			opacity: 0;
+			background-color: #ffffff;
+		}
+
+		.app_ins_btn2 {
+			position: absolute;
+			z-index: 1003;
+			top: 420px;
+			left: 0px;
+			width: 740px;
+			height: 70px;
+			border: 1px solid lime;
+			cursor: pointer;
+			FILTER: alpha(opacity=0);
+			opacity: 0;
+			background-color: #ffffff;
+		}
+
+		.plyr_back {
+			position: absolute;
+			display: none;
+			FILTER: alpha(opacity=80);
+			opacity: 0.8;
+			-moz-opacity: 0.2;
+			z-index: 930;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			border: 1px solid #000;
+		}
+
+
+		.img2_in_in {
+			position: absolute;
+			width: 887px;
+			height: 120px;
+			left: 50%;
+			margin-left: -443px;
+			top: 768px;
+			border: 0px solid lime;
+			z-index: 601;
+		}
+
+		.btn_01 {
+			position: absolute;
+			background: url(images/in/in_button.gif) no-repeat;
+			width: 278px;
+			height: 82px;
+			left: 26%;
+			margin-left: 0px;
+			top: 680px;
+			cursor: pointer;
+			border: 0px solid lime;
+			z-index: 601;
+		}
+
+		.db_box_2 {
+			position: relative;
+			left: 27%;
+			bottom: -570px;
+			width: 800px;
+			border: 0px solid lime
+		}
+
+		.db_box_inputTb_2 input[type="text"] {
+			height: 23px;
+			font-size: 21px;
+			border: 1px solid #ddd39e;
+			text-align: center;
+		}
+
+		.personal_info_chk_2 {
+			position: relative;
+			left: 50%;
+			margin-left: -211px;
+			top: 17px;
+		}
+
+		.db_box_result_btn_2 {
+			position: relative;
+			background: url(images/in/in_button_2.png) no-repeat;
+			width: 300px;
+			height: 81px;
+			margin: 0 auto;
+			top: -65px;
+			right: -230px;
+			cursor: pointer;
+			border: 0px solid lime;
+			z-index: 601;
+		}
+
+
+		.plyr_back {
+			position: absolute;
+			display: none;
+			FILTER: alpha(opacity=80);
+			opacity: 0.8;
+			-moz-opacity: 0.2;
+			z-index: 930;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			border: 1px solid #000;
+		}
+
+		.scroll_time {
+			position: fixed;
+			background: url(in/scroll_time.png) no-repeat;
+			right: 20px;
+			bottom: 10px;
+			width: 380px;
+			height: 415px;
+			z-index: 920;
+			border: 0px solid #ddd39e;
+		}
+
+		/*.scroll_time2 {position:fixed;background: url(./images/scroll_time_b_02.png) no-repeat;right:20px;bottom:45px;width:340px;height:126px;z-index:20000;border:0px solid #ddd39e;}*/
+
+		.scroll_time2>a {
+			width: 237px;
+			height: 84px;
+			position: relative;
+			border: 0px solid red;
+			display: block;
+			margin: 0 auto;
+			cursor: pointer;
+		}
+
+
+
+		.db_box_1 {
+			position: relative;
+			left: 3px;
+			top: 182px;
+			width: 230px;
+			height: 110px;
+			margin: 0 auto;
+			z-index: 900;
+			border: 0px solid #ddd39e;
+		}
+
+		.db_box_inputTb_1 input[type="text"] {
+			height: 20px;
+			font-size: 17px;
+			border: 0px solid #ddd39e;
+			text-align: center;
+		}
+
+		.db_box_result_btn_1 {
+			position: relative;
+			width: 216px;
+			height: 45px;
+			top: 223px;
+			left: -1px;
+			cursor: pointer;
+			border: 0px solid lime;
+			margin: 0 auto;
+			z-index: 1001;
+		}
+
+		.personal_info_chk_1 {
+			position: absolute;
+			margin: 0 auto;
+			top: 238px;
+			left: 47px;
+		}
+
+		.personal_info_chk_1.db_agree_1 {
+			position: absolute;
+			top: 0px;
+			left: 100px;
+			cursor: pointer;
+			color: yellow;
+			font-weight: bold;
+			font-size: 12px;
+		}
+
+		.db_agree {
+			position: relative;
+			top: 2px;
+			cursor: pointer;
+			color: yellow;
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+		/*
+.comment1 { color:#000;font-size:15px; }
+.comment0 { color:#000;font-size:17px; }
+*/
+
+		.private0 {
+			font-size: 15px;
+			color: white;
+		}
+
+		.private1 {
+			font-size: 10px;
+			color: white;
+		}
+
+		.private {
+			font-size: 11px;
+			color: white;
+		}
+
+		.comment1 {
+			font-size: 15px;
+			color: white;
+		}
+
+		.comment0 {
+			font-size: 10px;
+			color: white;
+		}
+
+		.topgo {
+			position: absolute;
+			width: 60px;
+			height: 40px;
+			top: 10px;
+			left: 123px;
+			cursor: pointer;
+			border: 0px solid lime;
+			margin: 0 auto;
+			z-index: 1001;
+			cursor: pointer;
+		}
+
+
+		.popup {
+			position: absolute;
+			bottom: 0;
+			left: 5%;
+		}
+
+		.popup .xbtn {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			cursor: pointer;
+		}
+	</style>
+
+
+	<script type="text/javascript" src="js/jquery_cal/ui/ui.datepicker.js"></script>
+	<script type="text/javascript" src="js/jquery_cal/ui/ui.datepicker-ko.js"></script>
+	<script src="js/slides.jquery.js"></script>
+	<script>
+		if (typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat') {
+			cot_t1_DOCtp = "_top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);_left:expression(document.documentElement.scrollLeft + document.documentElement.clientWidth - offsetWidth);}";
+		} else {
+			cot_t1_DOCtp = "_top:expression(document.body.scrollTop+document.body.clientHeight-this.clientHeight);_left:expression(document.body.scrollLeft + document.body.clientWidth - offsetWidth);}";
+		}
+
+		var cot_tl_bodyCSS = '* html {background:url(빈 이미지 blank.gif) fixed;background-repeat: repeat;background-position: right bottom;}';
+		var cot_tl_fixedCSS = '#cot_tl_fixed{position:fixed;';
+		var cot_tl_fixedCSS = cot_tl_fixedCSS + '_position:absolute;';
+		var cot_tl_fixedCSS = cot_tl_fixedCSS + 'z-index:1;';
+		var cot_tl_fixedCSS = cot_tl_fixedCSS + 'width:100%;';
+		var cot_tl_fixedCSS = cot_tl_fixedCSS + 'text-align:center;';
+		var cot_tl_fixedCSS = cot_tl_fixedCSS + 'bottom:0px;';
+		var cot_tl_fixedCSS = cot_tl_fixedCSS + 'right:0px;';
+		var cot_tl_fixedCSS = cot_tl_fixedCSS + 'clip:rect(0 100% 100% 0);';
+		var cot_tl_fixedCSS = cot_tl_fixedCSS + cot_t1_DOCtp;
+
+		document.write('<style type="text/css">' + cot_tl_bodyCSS + cot_tl_fixedCSS + '</style>');
+
+	</script>
+	<script type="text/javascript">
+
+		//setCookie("cookie_name","cookie_value",0,"/");
+		//getCookie("cookie_name");
+		//deleteCookie("cookie_name");
+
+		function setCookie(cookieName, cookieValue, cookieExpire, cookiePath, cookieDomain, cookieSecure) {
+			var cookieText = escape(cookieName) + '=' + escape(cookieValue);
+			cookieText += (cookieExpire ? '; EXPIRES=' + cookieExpire.toGMTString() : '');
+			cookieText += (cookiePath ? '; PATH=' + cookiePath : '');
+			cookieText += (cookieDomain ? '; DOMAIN=' + cookieDomain : '');
+			cookieText += (cookieSecure ? '; SECURE' : '');
+			document.cookie = cookieText;
+		}
+
+		function getCookie(cookieName) {
+			var cookieValue = null;
+			if (document.cookie) {
+				var array = document.cookie.split((escape(cookieName) + '='));
+				if (array.length >= 2) {
+					var arraySub = array[1].split(';');
+					cookieValue = unescape(arraySub[0]);
+				}
+			}
+			return cookieValue;
+		}
+
+		function deleteCookie(cookieName) {
+			var temp = getCookie(cookieName);
+			if (temp) {
+				setCookie(cookieName, temp, (new Date(1)));
+			}
+		}
+
+		function view_personal_popup() {
+			winname = window.open("http://frogstockesset.ohmysite.net/ab-private_info&OTSKIN=layout_bl.php", "vpopup", "width=400 height=500 menubar=no scrollbars=yes status=no");
+			return;
+		}
+
+		function view_loading() {
+			$('.loading_view').show();
+			$('.loading_view').fadeOut(3000);
+			return;
+		}
+
+		function resetting() {
+			var obj_answer_v = $('#answer_v');
+			var obj_answer_val = $('#answer_v').val();
+			var obj_p = $('#g_name');
+			var obj_age = $('#g_age');
+			//	var obj_t1 = $('#g_tel_1');
+			var obj_t2 = $('#g_tel_2');
+			var obj_t3 = $('#g_tel_3');
+			var obj_g_email = $('#g_email');
+			var obj_g_job = $('#g_job');
+			var obj_g_address = $('#g_address');
+			var result_yes = [];
+
+			obj_p.val('');
+			obj_age.val('');
+			//	obj_t1.val('');
+			$("#g_tel_1 option:eq(0)").attr("selected", "selected");
+			obj_t2.val('');
+			obj_t3.val('');
+			obj_g_email.val('');
+			obj_g_job.val('');
+			obj_g_address.val('');
+			$('.db_box').fadeOut(200);
+
+			for (var a = 0; a <= obj_answer_val.length; a++) {
+				if (obj_answer_val.charAt(a) == 1) {
+					result_yes.push(1);
+				}
+			}
+			obj_answer_v.val('');
+			return result_yes.length;
+		}
+
+		function ltrim(para) {
+			while (para.substring(0, 1) == ' ')
+				para = para.substring(1, para.length);
+			return para;
+		}
+
+		function isNotNull(obj, objv, str, gbn) {
+			var comp_v = ltrim(objv);
+			if (comp_v == '') {
+				if (gbn == 1) {
+					alert(str + ' 선택하십시오.');
+				} else {
+					alert(str + ' 입력하십시오.');
+				}
+				obj.focus();
+				return false;
+			} else
+				return true;
+		}
+
+
+
+		function is_numeric(obj) {
+			var $obj = $('#' + obj);
+			if (isNaN($obj.val())) {
+				alert('숫자만 입력가능합니다.');
+				$obj.val('').focus();
+			}
+			if (obj == "g_tel_1_1" && $obj.val().length == 3) {
+				document.getElementById("g_tel_2_1").focus();
+			}
+
+			if (obj == "g_tel_2_1" && $obj.val().length == 4) {
+				document.getElementById("g_tel_3_1").focus();
+			}
+
+			if (obj == "g_tel_1_2" && $obj.val().length == 3) {
+				document.getElementById("g_tel_2_2").focus();
+			}
+
+			if (obj == "g_tel_2_2" && $obj.val().length == 4) {
+				document.getElementById("g_tel_3_2").focus();
+			}
+		}
+
+		/*
+		function snd(){
+			var obj_t1 = $('#g_tel_1');
+			var obj_t2 = $('#g_tel_2');
+			var obj_t3 = $('#g_tel_3');
+			var hpV = obj_t1.val()+obj_t2.val()+obj_t3.val();
+			$.ajax({
+				type:"GET",      
+				url:"http://www.frogstock.co.kr/appsms_ok.asp",
+				dataType:"text", 
+				data: {			
+					hp:hpV
+				},		
+				success:function(data){      
+					frm_chk('');
+				},
+				error: function(xhr, txtStatus, errorThrown) {
+				  alert(txtStatus);
+				  return;
+				}
+			});
+		}
+		*/
+
+
+		var uAgent = navigator.userAgent.toLowerCase();
+		var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile', 'windows phone', 'windows ce');
+		var androidPhones = new Array('android', 'blackberry', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile', 'windows phone', 'windows ce');
+		//var iPhones = new Array('iphone','ipod','ipad');
+		var is_mobile = false;
+		var is_android = false;
+		var gtmps = "";
+		for (var i = 0; i < mobilePhones.length; i++) {
+			if (uAgent.indexOf(mobilePhones[i]) > -1) {
+				is_mobile = true;
+				break;
+			}
+		}
+		for (var i = 0; i < androidPhones.length; i++) {
+			if (uAgent.indexOf(androidPhones[i]) > -1) {
+				is_android = true;
+				break;
+			}
+		}
+
+		function showPopup() {
+			windowVar = window.open("http://www.thetopic.co.kr/camp/mtn/mtn_essential.html", "a", "menubar=no,width=500,height=400,left=300, top=400,scrollbars=yes");
+		}
+
+		function showPopup2() {
+			windowVar = window.open("http://www.thetopic.co.kr/camp/mtn/mtn_choose.html", "a", "menubar=no,width=500,height=400,left=300, top=400,scrollbars=yes");
+		}
+
+		function showPopup3() {
+			windowVar = window.open("http://www.thetopic.co.kr/camp/frog/one/pop3.html", "a", "menubar=no,width=600,height=750,left=300, top=150,scrollbars=yes");
+		}
+
+		function showPopup4() {
+			windowVar = window.open("http://www.thetopic.co.kr/camp/frog/one/pop_if.html?urlGubun=_iframe", "a", "menubar=no,width=1250,height=860,left=300, top=100,scrollbars=yes");
+		}
+
+		function showPopup5() {
+			windowVar = window.open("http://www.thetopic.co.kr/camp/frog/one/pop_if2.html?urlGubun=_iframe", "a", "menubar=no,width=1250,height=860,left=300, top=100,scrollbars=yes");
+		}
+
+		function chkfrmm() {
+			if ($("#agree_chk_1_2").is(":checked")) { } else {
+				alert("마케팅 정보 활용 수신동의를 하지 않으시면 무료체험 서비스 제공을 받으실 수 없습니다.\n\n서비스를 받기 위해서는 반드시 마케팅 정보활용 수신동의를 해주셔야 합니다.");
+			}
+		}
+
+		function frm_chk(val) {
+			var obj_answer_v = $('#answer_v');
+			var obj_age = $('#g_age');
+			var obj_p = $('#g_name_' + val);
+			var obj_t1 = $('#g_tel_1_' + val);
+			var obj_t2 = $('#g_tel_2_' + val);
+			var obj_t3 = $('#g_tel_3_' + val);
+			var obj_chk = $('#agree_chk_' + val + "_1");
+			var obj_g_email = $('#g_email');
+			var obj_g_job = $('#g_job');
+			var obj_g_address = $('#g_address');
+			var obj_answer = $('#answer_v');
+			//var obj_your_job_sort = $(':radio[name=your_job_sort]:checked');
+			var obj_your_job_sort = $('#your_job_sort');
+			var obj_your_gender = $('#your_gender');
+			var obj_your_address = $(':radio[name="your_address"]:checked');
+			/*
+			if(!isNotNull(obj_age,obj_age.val(), "나이를", 2 )){
+				obj_age.val('');obj_age.focus();return;
+			}
+			
+			if(obj_your_job_sort.val()=='' || obj_your_job_sort.val()==undefined){
+				alert('직종을 선택해주십시오.');
+				$('#your_job_sort_first').focus();return;
+			}
+			*/
+
+			if (!isNotNull(obj_p, obj_p.val(), "성명을", 2)) {
+				obj_p.val(''); obj_p.focus(); return false;
+			}
+			if (!isNotNull(obj_t1, obj_t1.val(), "전화번호를", 2)) {
+				obj_t1.val(''); obj_t1.focus(); return;
+			}
+
+			if (!isNotNull(obj_t2, obj_t2.val(), "전화번호를", 2)) {
+				obj_t2.val(''); obj_t2.focus(); return;
+			}
+			if (!isNotNull(obj_t3, obj_t3.val(), "전화번호를", 2)) {
+				obj_t3.val(''); obj_t3.focus(); return;
+			}
+			/*
+			if(obj_your_address.val()=='' || obj_your_address.val()==undefined){
+				alert('거주지를 선택해주십시오.');
+				$('#your_address_sort_first').focus();return;
+			}
+			
+			if(!isNotNull(obj_g_email,obj_g_email.val(), "이메일을", 2 )){
+				obj_g_email.val('');obj_g_email.focus();return;
+			}
+			*/
+
+			if (obj_chk.is(':checked') != true) {
+				alert('개인정보 취급방침란을 선택해주세요'); obj_chk.focus(); return;
+			}
+
+			if ($("#agree_chk_" + val + "_1").is(":checked")) {
+				g_agree = "예";
+			}
+			else {
+				g_agree = "아니오";
+			}
+
+
+			var obj_p_v = obj_p.val();
+			var cellphone_v = obj_t1.val() + '-' + obj_t2.val() + '-' + obj_t3.val();
+			var obj_chk_v = obj_chk.val();
+			var g_url_gubun = $('#g_url_gubun').val();
+			var adv_idx = $('#adv_idx').val();
+			var c_idx = $('#c_idx').val();
+			var g_usr_ip = $('#g_usr_ip').val();
+			var g_usr_agent = $('#g_usr_agent').val();
+			var g_lgrade_v = $('#g_lgrade').val();
+			var g_income_v = $('#g_income').val();
+			var g_income2_v = $('#g_income2').val();
+			var g_saving_v = $('#g_saving').val();
+			var g_hobby_v = $('#g_hobby').val();
+			var g_consume_v = $('#g_consume').val();
+			var g_referer_v = $('#g_referer').val();
+			var email_v = obj_g_email.val();
+			var job_v = obj_your_job_sort.val();
+			var gender_v = obj_your_gender.val();
+			var address_v = obj_your_address.val();
+			var obj_age_v = obj_age.val();
+			var answer_v = obj_answer.val();
+
+			var g_agree = "";
+			if ($("#agree_chk_" + val + "_2").is(":checked")) {
+				g_agree = "필수," + $("#agree_chk_" + val + "_2").val();
+			}
+			else {
+				g_agree = "필수";
+			}
+
+
+
+			/*
+				setCookie("coo_sex",gender_v,0,"/");
+				setCookie("coo_job",job_v,0,"/");
+			
+				setCookie("coo_name",obj_p_v,0,"/");
+				setCookie("coo_tel1",obj_t1.val(),0,"/");
+				setCookie("coo_tel2",obj_t2.val(),0,"/");
+				setCookie("coo_tel3",obj_t3.val(),0,"/");
+				setCookie("coo_addr",address_v,0,"/");
+			
+				$("input[id='your_gender_02']:radio[value='"+getCookie("coo_sex")+"']").attr('checked',true);
+				$('#your_job_sort_02').val(getCookie("coo_job"));
+				
+				$('#g_name_02').val(getCookie("coo_name"));
+				$('#g_tel_1_02').val(getCookie("coo_tel1"));
+				$('#g_tel_2_02').val(getCookie("coo_tel2"));
+				$('#g_tel_3_02').val(getCookie("coo_tel3"));
+				$('#your_address_02').val(getCookie("coo_addr"));
+				
+				$("input[id='your_gender_03']:radio[value='"+getCookie("coo_sex")+"']").attr('checked',true);
+				$('#your_job_sort_03').val(getCookie("coo_job"));
+				
+				$('#g_name_03').val(getCookie("coo_name"));
+				$('#g_tel_1_03').val(getCookie("coo_tel1"));
+				$('#g_tel_2_03').val(getCookie("coo_tel2"));
+				$('#g_tel_3_03').val(getCookie("coo_tel3"));
+				$('#your_address_03').val(getCookie("coo_addr"));	
+			*/
+
+			$.ajax({
+				type: 'POST',
+				url: "shooting3.php?callback=?",
+				dataType: "jsonp",
+				data: {
+					g_age: obj_age_v,
+					g_name: obj_p_v,
+					cellphone: cellphone_v,
+					g_email: email_v,
+					g_job: job_v,
+					g_gender: gender_v,
+					g_address: address_v,
+					g_agr_yn: obj_chk_v,
+					g_url_gubun: g_url_gubun,
+					adv_idx: adv_idx,
+					c_idx: c_idx,
+					g_usr_ip: g_usr_ip,
+					g_usr_agent: g_usr_agent,
+					g_answer: answer_v,
+					g_lgrade: g_lgrade_v,
+					g_income: g_income_v,
+					g_income2: g_income2_v,
+					g_saving: g_saving_v,
+					g_hobby: g_hobby_v,
+					g_consume: g_consume_v,
+					g_referer: g_referer_v,
+					g_agree: g_agree
+				},
+				success: function (data) {
+					if (data[0] == 0) {
+						alert('신청이 완료되었습니다');
+
+						function mobConv() {
+							var cn = new EN();
+							cn.setData("uid", "hyhstock");
+							cn.setData("ordcode", "");
+							cn.setData("qty", "1");
+							cn.setData("price", "1");
+							cn.setData("pnm", encodeURIComponent(encodeURIComponent("counsel")));
+							cn.setSSL(true);
+							cn.sendConv();
+						}
+
+						gtag('event', 'login', { 'event_category': 'success', 'event_action': 'input', 'event_label': 'db' });
+
+						$('#g_name_' + val).val('');
+						$('#g_tel_1_' + val).val('');
+						$('#g_tel_2_' + val).val('');
+						$('#g_tel_3_' + val).val('');
+						$("#agree_chk_" + val + "_a").attr("checked", false);
+						$("#agree_chk_" + val + "_1").attr("checked", false);
+						$("#agree_chk_" + val + "_2").attr("checked", false);
+						//view_loading();
+						//var yes_cnt = resetting();
+						//result_view(yes_cnt);
+						//$(".db_box_result_btn").hide();
+						//$('.db_box_result_btn2').show();
+						return;
+					} else {
+						alert('이미 등록된 연락처가 존재합니다');
+						obj_t1.val(''); obj_t2.val(''); obj_t3.val(''); obj_t1.focus();
+						return;
+					}
+				},
+				error: function (xhr) {
+					//console.log('실패 - ', xhr);
+					return;
+				}
+			});
+		}
+		//
+		//function frm2(){
+		//	var g_etc = $('#g_etc_content');
+		//	var g_inidx = $('#inidx');
+		//
+		//	if(!isNotNull(g_etc,g_etc.val(), "투자금을", 2 )){
+		//		g_etc.val('');g_etc.focus();return;
+		//	}
+		//
+		//	var g_etc_v = g_etc.val();
+		//	var g_inidx_v = g_inidx.val();
+		//
+		//	$.ajax({
+		//		type: 'POST',
+		//		url: "shooting2.php?callback=?",
+		//		dataType:"jsonp",
+		//		data: {
+		//				g_etc:g_etc_v,
+		//				g_inidx:g_inidx_v
+		//		},
+		//		success: function(data) {
+		//			if(data[0]==0){
+		//				alert("신청이 완료되었습니다");
+		//				pripop_hide();
+		//				return;
+		//			}else{
+		//				return;
+		//			}
+		//		},
+		//		error: function(xhr) {
+		//		  //console.log('실패 - ', xhr);
+		//		  return;
+		//		}
+		//	});
+		//}
+
+		$(document).ready(function () {
+			$('.tab1').bind('mouseover', function () {
+				for (i = 1; i <= 4; i++) {
+					if (i == 1) {
+						$(".tab" + i).css('background-image', 'url(images/img1-' + i + '_on.png)');
+					}
+					else {
+						$(".tab" + i).css('background-image', 'url(images/img1-' + i + '_off.png)');
+					}
+				}
+				$("#frame1").attr("src", "frame1_1.html"); // frame1_1.html 요부분에 해당 링크 넣으세요
+			});
+			$('.tab2').bind('mouseover', function () {
+				for (i = 1; i <= 4; i++) {
+					if (i == 2) {
+						$(".tab" + i).css('background-image', 'url(images/img1-' + i + '_on.png)');
+					}
+					else {
+						$(".tab" + i).css('background-image', 'url(images/img1-' + i + '_off.png)');
+					}
+				}
+				$("#frame1").attr("src", "frame1_2.html"); // frame1_2.html 요부분에 해당 링크 넣으세요
+			});
+			$('.tab3').bind('mouseover', function () {
+				for (i = 1; i <= 4; i++) {
+					if (i == 3) {
+						$(".tab" + i).css('background-image', 'url(images/img1-' + i + '_on.png)');
+					}
+					else {
+						$(".tab" + i).css('background-image', 'url(images/img1-' + i + '_off.png)');
+					}
+				}
+				$("#frame1").attr("src", "frame1_3.html"); // frame1_3.html 요부분에 해당 링크 넣으세요
+			});
+			$('.tab4').bind('mouseover', function () {
+				for (i = 1; i <= 4; i++) {
+					if (i == 4) {
+						$(".tab" + i).css('background-image', 'url(images/img1-' + i + '_on.png)');
+					}
+					else {
+						$(".tab" + i).css('background-image', 'url(images/img1-' + i + '_off.png)');
+					}
+				}
+				$("#frame1").attr("src", "frame1_4.html"); // frame1_4.html 요부분에 해당 링크 넣으세요
+			});
+
+			$('.but1').click(function () {
+				app_ins_pop();
+			});
+
+			//	$('.modal_button').click(function(){
+			//		frm2();
+			//	});	
+			//	
+
+			$('.but1_pop').click(function () {
+				app_ins_pop();
+			});
+
+			$('.but1_close').click(function () {
+				$('.app_ins').hide();
+				//open_pop_hide();
+				$('.plyr_back').hide();
+			});
+
+			$('.tab1_pop').click(function () {
+				open_pop('1');
+			});
+
+			$('.tab2_pop').click(function () {
+				open_pop('2');
+			});
+
+			$('.tab3_pop').click(function () {
+				open_pop('3');
+			});
+
+			$('.tab4_pop').click(function () {
+				open_pop('4');
+			});
+
+			$('.imgg2_in_1').click(function () {
+				//$('.imgg2_in_1').hide();
+				//$('.imgg2_in_2').show();
+				//$("#frame2").attr("src", "http://www.youtube.com/embed/hJ8HrtKsJ6w?rel=0&autoplay=1");
+				location.href = "http://youtu.be/hJ8HrtKsJ6w";
+			});
+
+			$('.but4_1').click(function () {
+				//open_pop('1');
+				//location.href="http://youtu.be/9NwyRwAg8bM";
+				location.href = "http://frog.myds.me/movie/moneyinfo/moneypart1.mp4";
+			});
+			$('.but4_2').click(function () {
+				app_ins_pop();
+			});
+
+			$('.but5_1').click(function () {
+				//open_pop('2');
+				//location.href="http://youtu.be/n7NWlHOAgZA";
+				location.href = "http://frog.myds.me/movie/moneyinfo/moneypart2.mp4";
+			});
+			$('.but5_2').click(function () {
+				app_ins_pop();
+			});
+
+			$('.but6_1').click(function () {
+				//open_pop('3');
+				//location.href="http://youtu.be/i1SeL5oTaXM";
+				location.href = "http://frog.myds.me/movie/moneyinfo/moneypart3.mp4";
+			});
+			$('.but6_2').click(function () {
+				app_ins_pop();
+			});
+
+			$('.but7_1').click(function () {
+				//open_pop('4');
+				//location.href="http://youtu.be/a-Nk-Dqv8T8";
+				location.href = "http://frog.myds.me/movie/moneyinfo/moneypart4.mp4";
+			});
+			$('.but7_2').click(function () {
+				app_ins_pop();
+			});
+
+			$('.but8_1').click(function () {
+				app_ins_pop();
+			});
+
+			$('.but10_1').click(function () {
+				app_ins_pop();
+			});
+
+			$('.sky').click(function () {
+				app_ins_pop();
+			});
+
+			$('.app_ins_btn2').click(function () {
+				$('.app_ins').hide();
+				//open_pop_hide();
+				$('.plyr_back').hide();
+			});
+
+			$('.app_ins_btn1').click(function () {
+				frm_chk('');
+			});
+
+			//	$('.plyr_back').click(function(){
+			//		//$('.app_ins').hide();
+			//		//open_pop_hide();
+			//		$('.modal').hide();
+			//		$('.plyr_back').hide();
+			//	});	
+			//
+			//	$('.clsbt').click(function(){
+			//		//$('.app_ins').hide();
+			//		open_pop_hide();
+			//		$('.plyr_back').hide();
+			//	});	
+
+			$('.but1_1').click(function () {
+				app_ins_pop();
+			});
+			$('.but2_1').click(function () {
+				//location.href="http://youtu.be/hJ8HrtKsJ6w";
+				$(".but2_1").attr("style", "display:none");
+				$(".but2_2").attr("style", "display:block");
+				$("#frame2").attr("src", "https://vimeo.com/197239979/785e40860f?rel=0&autoplay=1");
+			});
+			$('.but3_1').click(function () {
+				location.href = "#imgg4";
+			});
+			$('.but3_2').click(function () {
+				location.href = "#imgg5";
+			});
+			$('.but3_3').click(function () {
+				location.href = "#imgg6";
+			});
+			$('.but3_4').click(function () {
+				location.href = "#imgg7";
+			});
+
+			$('.db_box_result_btn_2').bind('click', function () {
+				frm_chk('2');
+			});
+
+
+
+			$('.btn_01').click(function () {
+				location.href = "#imgg8";
+			});
+
+			$('.topgo').click(function () {
+				location.href = "#topi1";
+			});
+
+			$('.xbtn').bind('click', function () {
+				$('.popup').hide();
+			});
+
+			$(window).scroll(function () {
+				var cssTop = 130;
+				var position = $(window).scrollTop();
+
+				/*
+				if(parseInt($(window).scrollTop()) <= 757 && parseInt($(window).scrollTop()) > -1){
+					$(".cot_tl_fixed").hide();
+				}
+				else{
+					$(".cot_tl_fixed").show();
+				}
+				*/
+				$(".cot_tl_fixed").hide();
+
+				var num = $(this).scrollTop();  // 스크롤값을 가져온다.
+
+				if (num < 594) {
+					$(".topi3").css("position", "relative");
+				} else {
+					$(".topi3").css("position", "fixed");
+					$(".topi3").css("top", "0px");
+					$(".topi3").css("left", "0px");
+					$(".topi3").css("z-index", "10000");
+				}
+				//$(".sky").stop().animate({ "top": position + cssTop + "px" }, 300);
+				//$(".app_ins").stop().animate({ "top": position + 300 + "px" }, 1);
+				//$(".open_pop").stop().animate({ "top": position + 10 + "px" }, 1);
+			});
+
+			setInterval("widthgo()", 1000);
+		})
+
+		function enter_ck() {
+			if (event.keyCode == 13) { frm_chk(''); }
+		}
+
+		function widthgo() {
+			if (parseInt(document.body.clientWidth) < 1400) {
+				//$(".sky").css({'left':'80%'});
+			}
+			else {
+				//$(".sky").css({'left':'70%'});
+			}
+		}
+
+		function db_box3_open() {
+			//$('.db_box3_pop').css('position','relative');
+
+			$('.db_box3_pop').css('left', (parseInt(document.body.clientWidth) - 600) / 2 + 'px');
+			$('.db_box3_pop').show();
+			$('.db_box_result_btn3').show();
+			$('.db_box_result_btn3_01').show();
+			$('.plyr_back').show();
+		}
+
+		function db_box3_close() {
+			$('.db_box3_pop').hide();
+			$('.db_box_result_btn3').hide();
+			$('.db_box_result_btn3_01').hide();
+			$('.plyr_back').hide();
+		}
+
+		function InitializeStatic_Menu() {
+			if (document.body.clientWidth < 1460) {
+				$(".model_img").css('padding', '0 0 0 ' + (1040 - ((1460 - parseInt(document.body.clientWidth)) / 2)) + 'px')
+			} else {
+				$(".model_img").css('padding', '0 0 0 1040px')
+			}
+			//alert(document.body.clientWidth);
+		}
+
+
+		function zeroAdd(val0) {
+			if (parseInt(val0) < 10) {
+				return '0' + val0;
+			}
+			else {
+				return val0;
+			}
+		}
+		function img3_over(val) {
+			for (i = 1; i <= 4; i++) {
+				if (parseInt(val) == parseInt(i)) {
+					$("#img3_" + i + "_off").hide();
+					$("#img3_" + i + "_on").show();
+				}
+			}
+		}
+		function img3_out(val) {
+			for (i = 1; i <= 4; i++) {
+				if (parseInt(val) == parseInt(i)) {
+					$("#img3_" + val + "_on").hide();
+					$("#img3_" + val + "_off").show();
+				}
+			}
+		}
+
+		function open_pop_hide() {
+			$('.open_pop').hide();
+			$("#frame1_pop").attr("src", "about:blank");
+		}
+
+		function app_ins_pop() {
+			//open_pop_hide();
+			$('.app_ins').show();
+			$('.app_ins').css('left', (parseInt(document.body.clientWidth) - 800) / 2 + 'px');
+			//$('.app_ins').css('top',parseInt($(document).scrollTop()) + 300 + 'px');
+			$('.plyr_back').css('height', document.body.clientHeight + 'px');
+			$('.plyr_back').show();
+			$("#g_tel_2").focus();
+		}
+
+		function open_pop(val) {
+			//$('body').css({scroll:'no'});
+			//$('body').css({overflow:'visible'}).bind('touchmove', function(e){e.preventDefault()});
+			//$(window).unbind('touchmove', handler);
+			$('.app_ins').hide();
+			$('.open_pop').show();
+			$('.open_pop').css('left', (parseInt(document.body.clientWidth) - 997) / 2 + 'px');
+			//$('.open_pop').css('top',parseInt($(document).scrollTop()) + 10 + 'px');
+			$('.plyr_back').css('height', document.body.clientHeight + 'px');
+			$('.plyr_back').show();
+
+			if (val == "") { val = 1; }
+
+			for (i = 1; i <= 4; i++) {
+				if (parseInt(val) == parseInt(i)) {
+					$(".tab" + i + "_pop").css('background-image', 'url(./images/img10-' + i + '_on.png)');
+				}
+				else {
+					$(".tab" + i + "_pop").css('background-image', 'url(./images/img10-' + i + '_off.png)');
+				}
+			}
+
+			if (parseInt(val) == 1) {
+				$("#frame1_pop").attr("src", "http://www.youtube.com/embed/9NwyRwAg8bM?rel=0&autoplay=1");
+			}
+			else if (parseInt(val) == 2) {
+				$("#frame1_pop").attr("src", "http://www.youtube.com/embed/n7NWlHOAgZA?rel=0&autoplay=1");
+			}
+			else if (parseInt(val) == 3) {
+				$("#frame1_pop").attr("src", "http://www.youtube.com/embed/i1SeL5oTaXM?rel=0&autoplay=1");
+			}
+			else if (parseInt(val) == 4) {
+				$("#frame1_pop").attr("src", "http://www.youtube.com/embed/a-Nk-Dqv8T8?rel=0&autoplay=1");
+			}
+		}
+
+		function swfWrite() {
+			tagObj = '';
+			tagObj += '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="100%" height="100%" id="info">'
+			tagObj += '<param name="movie" value="http://frogstock.speedgabia.com/frogstock/pc/swf/frog_kkj_284160.swf"/>'
+			tagObj += '<param name="quality" value="high" />'
+			tagObj += '<param name="wmode" value="transparent" />'
+			tagObj += '<embed src="http://frogstock.speedgabia.com/frogstock/pc/swf/frog_kkj_284160.swf" quality="high" width="100%" height="100%" name="info" align="middle" allowFullScreen="true" type="application/x-shockwave-flash" wmode="transparent" swLiveConnect=true pluginspage="http://www.macromedia.com/go/getflashplayer" />'
+			tagObj += '</object>'
+			document.write(tagObj);
+		}
+
+
+		var img_path = "http://www.thetopic.co.kr/camp/zzi/w_i/in/number"; //이미지 경로 설정
+
+		if (document.images) {
+			var imgArray = new Array();
+			imgArray[0] = new Image(60, 120);
+			imgArray[0].src = img_path + "/zzi4_0.png";
+			imgArray[1] = new Image(60, 120);
+			imgArray[1].src = img_path + "/zzi4_1.png";
+			imgArray[2] = new Image(60, 120);
+			imgArray[2].src = img_path + "/zzi4_2.png";
+			imgArray[3] = new Image(60, 120);
+			imgArray[3].src = img_path + "/zzi4_3.png";
+			imgArray[4] = new Image(60, 120);
+			imgArray[4].src = img_path + "/zzi4_4.png";
+			imgArray[5] = new Image(60, 120);
+			imgArray[5].src = img_path + "/zzi4_5.png";
+			imgArray[6] = new Image(60, 120);
+			imgArray[6].src = img_path + "/zzi4_6.png";
+			imgArray[7] = new Image(60, 120);
+			imgArray[7].src = img_path + "/zzi4_7.png";
+			imgArray[8] = new Image(60, 120);
+			imgArray[8].src = img_path + "/zzi4_8.png";
+			imgArray[9] = new Image(60, 120);
+			imgArray[9].src = img_path + "/zzi4_9.png";
+		}
+
+		var nextYear = new Date().getYear() + 1;
+		nextYear += (nextYear < 1900) ? 1900 : 0;
+		var targetDate = new Date(nextYear, 0, 1);
+		var targetInMS = targetDate.getTime();
+		var oneSec = 1000;
+		var oneMin = 60 * oneSec;
+		var oneHr = 60 * oneMin;
+		var oneDay = 24 * oneHr;
+
+		function countDown() {
+			var nowInMS = new Date().getTime();
+			var diff = targetInMS - nowInMS;
+			var scratchPad = diff / oneDay;
+			var daysLeft = Math.floor(scratchPad);
+			// hours left
+			diff -= (daysLeft * oneDay);
+			scratchPad = diff / oneHr;
+			var hrsLeft = Math.floor(scratchPad);
+			// minutes left
+			diff -= (hrsLeft * oneHr);
+			scratchPad = diff / oneMin;
+			var minsLeft = Math.floor(scratchPad);
+			// seconds left
+			diff -= (minsLeft * oneMin);
+			scratchPad = diff / oneSec;
+			var secsLeft = Math.floor(scratchPad);
+			// now adjust images
+			setImages(daysLeft, hrsLeft, minsLeft, secsLeft);
+		}
+
+		function setImages(days, hrs, mins, secs) {
+			var i;
+			days = formatNum(days, 3);
+			for (i = 0; i < days.length; i++) {
+				//document.images["days" + i].src = imgArray[parseInt(days.charAt(i))].src;
+			}
+			hrs = formatNum(hrs, 2);
+			for (i = 0; i < hrs.length; i++) {
+				document.images["hours" + i].src = imgArray[parseInt(hrs.charAt(i))].src;
+			}
+			mins = formatNum(mins, 2);
+			for (i = 0; i < mins.length; i++) {
+				document.images["minutes" + i].src = imgArray[parseInt(mins.charAt(i))].src;
+			}
+			secs = formatNum(secs, 2);
+			for (i = 0; i < secs.length; i++) {
+				document.images["seconds" + i].src = imgArray[parseInt(secs.charAt(i))].src;
+			}
+		}
+
+		function formatNum(num, len) {
+			var numStr = "" + num;
+			while (numStr.length < len) {
+				numStr = "0" + numStr;
+			}
+			return numStr
+		}
+
+		function showImgIn(val0, val1) {
+			if (val0 == "y") {
+				$('#in_img0' + val1).show();
+			}
+			else if (val0 == "n") {
+				$('#in_img0' + val1).hide();
+			}
+		}
+
+		function CopenPop(a) {
+			/*indow.open('http://frogtv.co.kr');*/
+			window.open(a);
+		}
+
+
+		function check_all(val) {
+			if ($("#agree_chk_" + val + "_a").is(':checked') == true) {
+				$("#agree_chk_" + val + "_1").attr("checked", true);
+				$("#agree_chk_" + val + "_2").attr("checked", true);
+			}
+			else {
+				$("#agree_chk_" + val + "_1").attr("checked", false);
+				$("#agree_chk_" + val + "_2").attr("checked", false);
+			}
+		}
+
+		//function pripop(){
+		//	 $(".modal").css({"top":((parseInt($(window).height())-480)/2)+"px"}).show();
+		//	 $('.plyr_back').css({'height':document.body.clientHeight + 'px'}).show();
+		//}
+		//
+		//function pripop_hide(){
+		//	$("#g_etc_content").val('');
+		//	$(".modal").hide();
+		//	$('.plyr_back').hide();
+		//}
+	</script>
+</head>
+<!--<body onload="setInterval('countDown()', 1000)" onunload="CopenPop('http://www.mtnstock.co.kr/')">-->
+
+<body onload="setInterval('countDown()', 1000)">
+
+	<div class="mainLayout">
+		<div class="topi1" id="topi1">
+			<div class="topi1_in">
+				<div class="timecnt">
+					<table width="353">
+						<tr>
+							<td>
+								<img name="hours0" src="../../zzi/w_i/in/number/zzi4_0.png" width="47" height="61">
+							</td>
+							<td>
+								<img name="hours1" src="../../zzi/w_i/in/number/zzi4_0.png" width="47" height="61">
+							</td>
+							<td width="17">&nbsp;</td>
+							<td>
+								<img name="minutes0" src="../../zzi/w_i/in/number/zzi4_0.png" width="47" height="61">
+							</td>
+							<td>
+								<img name="minutes1" src="../../zzi/w_i/in/number/zzi4_0.png" width="47" height="61">
+							</td>
+							<td width="17">&nbsp;</td>
+							<td>
+								<img name="seconds0" src="../../zzi/w_i/in/number/zzi4_0.png" width="47" height="61">
+							</td>
+							<td>
+								<img name="seconds1" src="../../zzi/w_i/in/number/zzi4_0.png" width="47" height="61">
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="appcnt">
+					<table width="85">
+						<tr>
+							<td>
+								<img src="../../zzi/w_i/in/number/zzi4_small_0.png" width="28" height="39">
+							</td>
+							<td>
+								<img src="../../zzi/w_i/in/number/zzi4_small_8.png" width="28" height="39">
+							</td>
+							<td>
+								<img src="../../zzi/w_i/in/number/zzi4_small_5.png" width="28" height="39">
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="imgg2">
+			<div class="imgg2_in"></div>
+		</div>
+		<!--
+	<div class="imgg2a"><div class="imgg2a_in"></div></div>
+	<div class="imgg2a_1">
+		<div class="imgg2a_1_in">
+			<a class="if_a" onclick="showPopup4();">&nbsp;</a>
+			<a class="if_b" onclick="showPopup5();">&nbsp;</a>
+		</div>
+	</div>
+-->
+		<!--	
+	<div class="imgg2a_1">
+		<div class="imgg2a_1_in">
+			<div class="if">
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+			</div>
+			<div class="if2">
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+			</div>	
+			<div class="if3">
+				<a class="re1" onclick="showPopup4();">&nbsp;</a>
+				<a class="re2" onclick="showPopup4();">&nbsp;</a>
+				<a class="re3" onclick="showPopup4();">&nbsp;</a>
+				<a class="re4" onclick="showPopup4();">&nbsp;</a>
+			</div>	
+			<div class="if4">
+				<a  onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+				<a onclick="showPopup4();">&nbsp;</a>
+			</div>				
+			<div class="if5">
+				<a onclick="showPopup4();">&nbsp;</a>
+			</div>									
+		</div>
+	</div>
+-->
+
+
+
+
+
+
+		<div class="imgg3">
+			<div class="imgg3_in">
+				<a onclick="showPopup3();">&nbsp;</a>
+			</div>
+		</div>
+		<div class="imgg4">
+			<div class="imgg4_in"></div>
+		</div>
+		<div class="imgg5">
+			<div class="imgg5_in"></div>
+		</div>
+		<div class="imgg6">
+			<div class="imgg6_in"></div>
+		</div>
+		<div class="imgg7">
+			<div class="imgg7_in"></div>
+		</div>
+		<div class="imgg8">
+			<div class="imgg8_in"></div>
+		</div>
+		<div class="imgg9">
+			<div class="imgg9_in"></div>
+		</div>
+		<!--
+	<div class="imgg10">
+		<div class="imgg10_in">
+			<iframe src="https://player.vimeo.com/video/231999399" width="600px;" height="auto;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+			</iframe>			
+		</div>
+	</div>
+	<div class="imgg11"><div class="imgg11_in"></div></div>
+	<div class="imgg12"><div class="imgg12_in"></div></div>
+	<div class="imgg13"><div class="imgg13_in"></div></div>
+-->
+		<!--	<div class="imgg12"><div class="imgg12_in"></div></div>-->
+
+
+
+
+
+
+	</div>
+	<!--
+<div class="open_pop">
+	<div class="tab_pop">
+		<div class="tab1_pop"></div>
+		<div class="tab2_pop"></div>
+		<div class="tab3_pop"></div>
+		<div class="tab4_pop"></div>
+	</div>
+	<div class="frame1_pop"><iframe id="frame1_pop" name="frame1_pop" align="center" src="about:blank" width="825" height="498" scrolling="no" frameborder="0"></iframe></div>
+	<div class="clsbt"></div>
+</div>
+<div class="plyr_back"></div>
+-->
+
+	<input type='hidden' id='g_cellphone' value=''>
+	<input type="hidden" id="g_url_gubun" value="">
+	<input type="hidden" id="nextUrl" value="">
+	<input type='hidden' id='adv_idx' value="93"> <!--광고주 코드 -->
+	<input type='hidden' id='c_idx' value="171"> <!--캠페인 코드 -->
+	<input type='hidden' id='g_usr_ip' value="125.246.177.247"> <!--get id -->
+	<input type='hidden' id='g_usr_agent' value="CyotekWebCopy/1.9 CyotekHTTP/6.4"> <!--get browser -->
+	<input type='hidden' id='g_referer' value=""> <!--get referer -->
+	<input type="hidden" id="s_flag" value="">
+	<input type="hidden" id="answer_v" value="">
+	<input type="hidden" id="score_v" value="0">
+	<input type="hidden" id='result_flag' value=''>
+	<input type="hidden" id='seq' value='1'>
+	<input type="hidden" id='inidx' value=''>
+
+	<div class="scroll_time">
+		<div class="db_box_1">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td style="padding:0 0 21px 0;"><input type="text" name="g_name_1" id="g_name_1"
+							style="width:230px;height:20px;font-size:17px;" maxlength="25"></td>
+					<td style="width:10px;"></td>
+				</tr>
+				<tr>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td>
+									<!--								<input type="text" name="g_tel_1_1" id="g_tel_1_1" maxlength="3" style="width:60px;height:20px;font-size:17px;" onKeyup="javascript:is_numeric('g_tel_1_1');">-->
+
+									<select type="text" name="g_tel_1_1" id="g_tel_1_1" maxlength="3"
+										style="width:60px;height:24px;font-size:17px;"
+										onkeyup="javascript:is_numeric('g_tel_1_1');">
+										<option selected="selected" value="010">010</option>
+										<option value="011">011</option>
+										<option value="016">016</option>
+										<option value="017">017</option>
+										<option value="018">018</option>
+										<option value="019">019</option>
+									</select>
+
+								</td>
+								<td style="padding:0 5px 0 5px;">
+									<b style="color:#ffffff">-</b>
+								</td>
+								<td>
+									<input type="text" name="g_tel_2_1" id="g_tel_2_1" maxlength="4"
+										style="width:60px;height:20px;font-size:17px;"
+										onkeyup="javascript:is_numeric('g_tel_2_1');">
+								</td>
+								<td style="padding:0 5px 0 5px;">
+									<b style="color:#ffffff">-</b>
+								</td>
+								<td>
+									<input type="text" name="g_tel_3_1" id="g_tel_3_1" maxlength="4"
+										style="width:60px;height:20px;font-size:17px;"
+										onkeyup="javascript:is_numeric('g_tel_3_1');">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="height:10px; width:20px"></td>
+				</tr>
+				<tr>
+					<td>
+
+						<input type="checkbox" id='agree_chk_1_a' onclick="check_all('1')" value="y" valign="top"
+							checked="">
+						<span class="private0">아래 약관에 모두 동의합니다.</span>
+
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;
+						<input type="checkbox" id='agree_chk_1_1' value="필수" valign="top" checked="">
+						<span class="private1">개인정보 수집동의 및 이용동의 (필수)
+							<a onclick="showPopup();">
+								<font style="color:yellow; cursor:pointer; size:10px;"> [보기]</font>
+							</a>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;
+						<input type="checkbox" id='agree_chk_1_2' value="선택" valign="top" checked=""
+							onclick="chkfrmm();">
+						<span class="private1">제3자 개인정보제공 및 마케팅활용동의 (선택)
+							<a onclick="showPopup2();">
+								<font style="color:yellow; cursor:pointer; size:10px;"> [보기]</font>
+							</a>
+						</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="db_box_result_btn_1" id="submitBtn"></div>
+		<div class="topgo"></div>
+	</div>
+
+
+
+
+	<!--
+
+<div class="scroll_time2">
+	<a onclick="showPopup5();">&nbsp;</a>
+	</div>
+-->
+	<!--
+<div class="popup">
+	<img src="images/pop/popup_s.jpg">
+	<div class="xbtn"><img src="images/pop/popup_sx.png">
+</div>
+-->
+	<!--
+<div class="modal">
+	<img src="images/modal.jpg">
+	<div class="modal_name"></div>
+	<div class="modal_text"><input type="text" id="g_etc_content" name="g_etc_content" value="" style="width:350px;height:30px;border:0px;font-size:20px;text-align:center;" placeholder="투자금을 입력하세요"></div>
+	<div class="modal_button"><img src="images/modal_button.png"></div>
+</div>
+<div class="plyr_back"></div>
+-->
+
+	<div style="display:none;width:0px;height:0px;"><iframe name="sub_frame" id="sub_frame" width="0" height="0"
+			scrolling="no" frameborder="0"></iframe></div>
+	<div style="display:none;width:0px;height:0px;"><iframe name="down_frame" id="down_frame" width="0" height="0"
+			scrolling="no" frameborder="0"></iframe></div>
+
+	<!-- WIDERPLANET  SCRIPT START 2018.1.22 -->
+	<div id="wp_tg_cts" style="display:none;"></div>
+	<script type="text/javascript">
+		var wptg_tagscript_vars = wptg_tagscript_vars || [];
+		wptg_tagscript_vars.push(
+			(function () {
+				return {
+					wp_hcuid: "",   /*고객넘버 등 Unique ID (ex. 로그인  ID, 고객넘버 등 )를 암호화하여 대입.
+				*주의 : 로그인 하지 않은 사용자는 어떠한 값도 대입하지 않습니다.*/
+					ti: "39490",	/*광고주 코드 */
+					ty: "Home",	/*트래킹태그 타입 */
+					device: "web"	/*디바이스 종류  (web 또는  mobile)*/
+
+				};
+			}));
+	</script>
+	<script type="text/javascript" async="" src="../../../js/wp_astg_4.0.js"></script>
+	<!-- // WIDERPLANET  SCRIPT END 2018.1.22 -->
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="../../../gtag/js?id=UA-52060714-8"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-52060714-8');
+	</script>
+
+
+
+	<!-- Mobon Tracker v3.1 [공용] start -->
+
+	<script src="../../../js/enliple_min2.js" defer="defer" onload="mobRf()"></script>
+	<!-- Mobon Tracker v3.1 [공용] end -->
+
+
+
+
+
+	<div style="display:none;width:0px;height:0px;"><iframe name="sub_frame" id="sub_frame" width="0" height="0"
+			scrolling="no" frameborder="0"></iframe></div>
+	<div style="display:none;width:0px;height:0px;"><iframe name="down_frame" id="down_frame" width="0" height="0"
+			scrolling="no" frameborder="0"></iframe></div>
+	<script>
+		$(document).ready(function () {
+			// 폼 제출 이벤트 핸들러
+			$("#submitBtn").click(function (e) {
+				e.preventDefault(); // 폼 기본 제출 막기
+
+				// 입력 데이터 가져오기
+				var name = $('#g_name_1').val();
+				var tel1 = $('#g_tel_1_1').val();
+				var tel2 = $('#g_tel_2_1').val();
+				var tel3 = $('#g_tel_3_1').val();
+				var isAgree = $('#agree_chk_1_1').is(':checked'); // 필수 동의 확인
+
+				// 입력 검증
+				if (name === "" || tel1 === "" || tel2 === "" || tel3 === "") {
+					alert("모든 필드를 채워주세요.");
+					return;
+				}
+				if (!isAgree) {
+					alert("개인정보 수집 및 이용에 동의해주세요.");
+					return;
+				}
+
+				// 전화번호 전체 조합
+				var fullTel = tel1 + '-' + tel2 + '-' + tel3;
+
+				// AJAX 요청
+				$.ajax({
+					type: "GET",
+					url: 'https://script.google.com/macros/s/AKfycby0tavb1Tqf7npMDwKB8_C0YdUV-WmobHwIUhsVZ6FLSaCIZv9ActR4dAl4AGgdFt8pxQ/exec', // 서버 URL
+					data: {
+						"이름": name,
+						"전화번호": fullTel,
+					},
+					success: function (response) {
+						$('#g_name_1').val('');
+						$('#g_tel_1_1').val('');
+						$('#g_tel_2_1').val('');
+						$('#g_tel_3_1').val('');
+						alert("상담 신청이 완료되었습니다.");
+					},
+					error: function (xhr, status, error) {
+						$('#g_name_1').val('');
+						$('#g_tel_1_1').val('010');
+						$('#g_tel_2_1').val('');
+						$('#g_tel_3_1').val('');
+						alert("상담 신청이 완료되었습니다.");
+					}
+				});
+			});
+		});
+	</script>
+
+</body>
+
+</html>
